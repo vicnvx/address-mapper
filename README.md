@@ -1,2 +1,3 @@
-# address-mapper
-opens text addresses in a new tab
+## address mapper
+
+# Maps all text addresses on a page into new tabs

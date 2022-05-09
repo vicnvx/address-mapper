@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "address-mapper",
+    "version": "1.0",
+    "description": "Maps text addresses on a page into new tabs",
+    "icons": {
+        "48": "/icons/icon-48-black.png"
+    },
+    "permissions" : ["activeTab"],
+    "content_scripts" : [
+        {
+            "matches": ["*://*/*"],
+            "js": ["address-mapper.js"]
+        }
+    ],
+    "background" : {
+        "scripts" : ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": {
+            "48" : "/icons/icon-48-black.png"
+        },
+        "default_title": "Address Mapper"
+    }
+}
